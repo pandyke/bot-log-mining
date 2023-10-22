@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Egger"
+  given-names: "Andreas"
+  orcid: "https://orcid.org/0000-0001-5580-4274"
+title: "Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining"
+url: "https://github.com/pandyke/bot-log-mining"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Egger"
+    given-names: "Andreas"
+    orcid: "https://orcid.org/0000−0001−5580−4274"
+  - family-names: "ter Hofstede"
+    given-names: "Arthur"
+    orcid: "https://orcid.org/0000-0002-2730-0201"
+  - family-names: "Kratsch"
+    given-names: "Wolfgang"
+    orcid: "https://orcid.org/0000-0001-9815-0653"
+  - family-names: "Leemans"
+    given-names: "Sander J.J."
+    orcid: "https://orcid.org/0000-0002-5201-7125"
+  - family-names: "Röglinger"
+    given-names: "Maximilian"
+    orcid: "https://orcid.org/0000-0003-4743-4511"
+  - family-names: "Wynn"
+    given-names: "Moe T."
+    orcid: "https://orcid.org/0000-0002-7205-8821"
+  # doi: "10.1109/ICPM53251.2021.9576869"
+  # journal: "Journal Title"
+  # month: 0
+  # start: 000
+  # end: 000
+  title: "Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining"
+  # issue: 0
+  # volume: 0
+  year: 2024
