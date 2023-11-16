@@ -1,0 +1,1784 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log>
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-12 11:40:42.173030+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="6f171c4f-a530-41cc-9feb-cb7f47b70387" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-12 12:02:50.202030+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="55c6abc8-49e6-4922-9299-ece40e3a88c0" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<int key="RPA_Exec_Nr" value="3406673285104" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-12 12:12:24.319943+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="1b87ba51-1bd1-481d-b606-76deadb83423" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KD571" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-25 22:02:27.395943+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f68a6a6d-885b-4b8d-84ac-885111fb6132" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DZ488" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-30 21:14:29.399943+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e7fabfe2-46c8-4dd1-bf41-3e11561f6ce3" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="f2890f0d-60be-48ff-92f1-b65d0d7b029c" />
+			<string key="time:timestamp" value="2022-05-31 14:01:36.429943+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="c8aee2af-dd20-460f-9fdd-f88dc6798a99" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3406673285104" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-12 12:04:38.247961+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="8cf966aa-84a2-4d15-b7f2-c81c8b4374c6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-12 12:10:03.268961+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="c35c07ce-a475-48de-8175-5ad2e66fb8ad" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<int key="RPA_Exec_Nr" value="9414008564101" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-12 12:18:34.539998+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="6ec2fa38-06c3-4ab7-8c62-8193387e8df0" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SM510" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-17 01:12:41.637998+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="7368b1b5-ef32-42d6-a329-b56cb41cac7c" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-21 01:06:45.649998+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="581dfb56-e715-458e-b611-c0da416c1181" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-23 08:58:49.695998+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="398e9da8-d265-483f-9f29-37e871f6baea" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="GI198" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="29fa76ce-cec1-4520-b556-bd8a38ffe1a0" />
+			<string key="time:timestamp" value="2022-05-23 10:03:09.729998+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="7cacba30-d804-4d16-955c-f52a47e7acd6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UN707" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9414008564101" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-12 11:46:06.685780+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f37a431f-4061-4600-bc78-9a90131b792f" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BZ116" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-12 12:14:25.710780+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="a57e4d1c-0f59-4ac9-9097-76a95f35e425" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<int key="RPA_Exec_Nr" value="6361437141863" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-12 12:22:13.168159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b10494f9-27c9-4d8b-972f-6ac84cbab6d8" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BJ951" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-18 16:49:38.206159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="d9a66844-131d-4376-aa1f-85a5c066a5ce" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-19 18:37:06.236159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="dc2ae628-31a2-4d8e-820b-74ec39f5d461" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="TL383" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-19 19:09:19.272159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="3a5c8015-4bc4-4770-85c0-9993d1f1bb05" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-22 13:03:40.319159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="583d3ea2-f425-4734-a3c8-32fa2fc1d243" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="XU688" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="bf51455a-bd26-47f3-9057-3513f0618859" />
+			<string key="time:timestamp" value="2022-05-22 13:43:52.365159+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e1ba11f9-93b1-4bd1-9202-e2589b2f6b0d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6361437141863" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-12 11:41:05.239814+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="62294d94-6487-4027-af42-9a6a812f276b" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BZ116" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-12 12:21:13.327814+0200" />
+			<boolean key="success" value="false" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="b232cf86-1bc4-42aa-a5c0-0253a98cd5e5" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<int key="RPA_Exec_Nr" value="2249207574896" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-12 12:29:16.732015+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="4aafc4d9-432b-47e5-bfd0-ccb45761ea5b" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DI771" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-21 12:22:18.762015+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="1cb83adc-db4c-4e41-bab6-8e583927b40d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-26 08:34:20.803015+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="1b8c1ffc-adb4-4316-9788-2242fbb777e6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="TR153" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="2f430a6f-2669-4242-b66c-85b31bfef23b" />
+			<string key="time:timestamp" value="2022-05-26 09:45:29.812015+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="016c8b32-5632-4635-aaf1-e2a491cbb6fc" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2249207574896" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-05-12 11:52:29.372617+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="cf689955-9987-4fda-af38-5576a4da3a14" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-05-12 12:26:34.406617+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="39a7e6d1-7396-4fcf-96d2-56fc14c2cf7a" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<int key="RPA_Exec_Nr" value="7596872864572" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-05-12 12:34:40.999639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="4fea4ee2-418c-4bcd-8045-7ea1f4dae807" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="RL520" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-05-26 07:08:59.033639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="7764f2f0-9527-4718-bf79-d290d9bc7e11" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="OG996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-06-03 23:08:18.088639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b8b744d5-a1d3-4e87-8190-32451b0af8fd" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="TL383" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-06-04 00:42:31.135639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="69633d49-edb1-49c5-a689-fdc6b9fb5ec5" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-06-05 10:38:36.201639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="006e8596-199e-4868-a2d2-e7351e30c888" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="GI198" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="629cc424-9f75-4f27-9b19-8fc3bbf8f41a" />
+			<string key="time:timestamp" value="2022-06-05 12:01:39.298639+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="5fa4bdbc-ad31-4db1-9339-0697f8ded1c9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7596872864572" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-12 11:58:18.033025+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="cb4193fd-839d-40ee-9d4f-abe5ee59bfad" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KA831" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-12 12:32:35.066025+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="f57ae62d-f92e-4e02-b2ce-6cb5015d8b74" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<int key="RPA_Exec_Nr" value="4931805740216" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-12 12:45:34.320307+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e6772fce-d7d3-4481-a82f-1c3c1eef1328" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DZ488" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-20 10:30:58.335307+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="d22aec10-9e75-495f-b8a3-1f9af9871c81" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="TL383" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-20 12:18:27.404307+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b9439a8c-2e00-4436-9334-e839a6d4936c" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-24 22:49:36.503307+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="0e18ef65-4b73-4447-bfb2-10dbf4d9d49e" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="GI198" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="f02e57bf-aae9-4945-aea7-310980bab065" />
+			<string key="time:timestamp" value="2022-05-25 00:31:47.518307+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="90be55a8-e4c5-4f89-8b7f-c7091dd9eaf4" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UN707" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4931805740216" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="07407b55-d12a-4410-9f66-567af7e58555" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-12 12:23:51.495838+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f8a113af-861b-4a6d-a2cd-5c454573af19" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-12 12:40:08.509838+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="4e35b8cd-2ef3-4f94-b363-23cef1365650" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<int key="RPA_Exec_Nr" value="1418366315731" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-12 12:51:55.237638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="a057f487-18ec-40a3-bbc1-db9a1ba6f710" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BJ951" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-25 02:07:15.263638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="d9a4c9df-e174-4906-a55e-000ae4e9e95d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DI771" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-26 23:51:27.361638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="4f58c942-84a8-4018-b9aa-e7fe99d06264" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="TL383" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-27 00:31:45.461638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="864b282a-a0d4-47b9-bf47-9e804be25499" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="WF772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-30 04:55:46.538638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="c174a89f-071e-421a-af67-d82f4efc4445" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="XU688" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="07407b55-d12a-4410-9f66-567af7e58555" />
+			<string key="time:timestamp" value="2022-05-30 05:57:02.541638+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="d2dafa72-3b24-4f1f-a1a0-74aaada3fcca" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1418366315731" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-12 12:39:05.306251+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f46caf46-5e4e-4542-9a6e-f067c1c9ae9e" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BZ116" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-12 12:48:30.375251+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="901e53f5-562f-41cc-b779-e85352b8a1b0" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<int key="RPA_Exec_Nr" value="2953782358241" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-12 12:55:28.753375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="bc72183d-0765-4903-8697-7fac67291187" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DI771" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-18 02:42:46.775375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="40589939-0c62-49a8-b147-4fe4066b53f9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="JF785" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-18 03:36:03.853375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="ebac7c07-cf73-4e1a-9b57-244cf74db656" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="ER300" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="2fbeb4ca-6dd3-4716-80bf-36c72407558f" />
+			<string key="time:timestamp" value="2022-05-20 17:22:10.923375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="2207c8fa-1379-42ec-99e2-8d122a1595c2" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2953782358241" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-12 12:41:18.001771+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b81ccb9f-709d-410e-90b8-58ac8ce5f682" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KA831" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-12 12:53:26.030771+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="cc4477d4-cc71-4804-987d-a7e9bc26c881" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<int key="RPA_Exec_Nr" value="2581786895611" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-12 13:01:07.826445+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="4e021b67-b61e-4584-9a5d-323f42621833" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="RL520" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-26 03:31:15.902445+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="ccacf398-4ba7-415f-8fb0-6b7c84ac50bb" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="OG996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-28 19:39:16.912445+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="c273eac4-7c86-4090-8e18-23db98900b08" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="VM996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-28 21:29:37.920445+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="da0fb468-0e63-4f40-85ea-50c4fbc615a3" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="8cb924de-7c2a-4b46-b1a6-63bb1ae43999" />
+			<string key="time:timestamp" value="2022-05-30 08:44:40.925445+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="a1058e4d-1397-4eea-a3da-041d68560eb6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SH912" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2581786895611" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-12 12:18:40.647121+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="9b5ad0be-14ab-40d9-8332-2efcbe55bb7f" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-12 12:59:59.708121+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="d3542e05-f426-43c3-abfb-62d9cb96be38" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<int key="RPA_Exec_Nr" value="9977845434593" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-12 13:07:41.460377+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f902f344-58d2-46f3-8d91-0756c5725c08" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="RL520" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-22 19:25:48.473377+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="7d5c1d2a-a50e-4228-bd93-63a48e73e31d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-24 01:54:10.529377+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="cd2ec3ab-b6de-4b47-9211-6919a2feebb9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-26 06:16:24.582377+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="396640bb-2846-44f5-bd9f-a9c9332fd81c" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AM956" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="f93e6f22-debc-45da-b219-766b4eab8e06" />
+			<string key="time:timestamp" value="2022-05-26 07:35:52.676377+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="95cb8b73-218f-40bc-9c7f-8cbdb64b1c30" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9977845434593" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+			<string key="time:timestamp" value="2022-05-20 17:07:52.209599+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="9ed322d0-bcbf-4d0d-9521-a9d797c031cd" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2300274100906" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+			<string key="time:timestamp" value="2022-05-20 17:47:07.227599+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="297270f2-e7be-49a7-8d9a-e9dfa4331325" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2300274100906" />
+			<int key="RPA_Exec_Nr" value="2300274100906" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+			<string key="time:timestamp" value="2022-05-20 17:57:38.447369+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f01d8a0b-4601-4ce3-9b4c-81ed310b8167" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2300274100906" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+			<string key="time:timestamp" value="2022-05-26 04:16:46.457369+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="9a4f3b5f-ec0c-4b70-91ec-b2689612b60e" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="WF772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2300274100906" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="65cee28b-6450-435f-8d06-49cd54a7bb33" />
+			<string key="time:timestamp" value="2022-05-28 20:47:12.528369+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="41557da2-6038-42dc-a0f0-f1b1f6c1dd75" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="2300274100906" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-05-20 17:33:28.547141+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="01cd161e-cd92-4c72-b98a-18e58a507c42" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="PQ162" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-05-20 17:53:34.600141+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="d2260f9e-55ef-4fc1-9e07-88d6160d4318" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<int key="RPA_Exec_Nr" value="4433021972337" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-05-20 18:04:29.685855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="51f2f576-be8a-4305-9167-141c130cf583" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KD571" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-05-30 21:05:58.693855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="714c1607-57da-41b8-8d62-a0072fd3841b" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="OG996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-06-01 22:03:11.694855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="92f3ddea-c697-4072-916e-0ee62b1cb420" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="VM996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-06-01 23:12:20.753855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="9ca4af65-e873-429e-af10-c663f74bf9ee" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-06-03 18:08:34.843855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e509e58d-8edb-4c67-984c-a1510df2cc6a" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="GI198" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="b3bb2023-2124-48aa-b8a0-6d0cf348c3d4" />
+			<string key="time:timestamp" value="2022-06-03 20:02:00.915855+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="212984c6-e867-4053-b313-e99288b8c4b9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4433021972337" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-20 17:51:56.733078+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="1e087985-4f6d-4fcf-84d3-274bd06280be" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BZ116" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-20 18:00:15.795078+0200" />
+			<boolean key="success" value="false" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="a21405d3-8ce7-4184-af88-b43cdb2ab7a3" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<int key="RPA_Exec_Nr" value="1271853057039" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-20 18:06:44.237124+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="ba454b08-09f7-491d-ad33-86bb76b23ddd" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SM510" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-25 08:04:46.303124+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="890ddd2e-03a8-4c27-bdb4-a58e292b89bc" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-26 09:57:14.327124+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b7fcfffc-7363-4357-95b9-69f62fa2c467" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="2cf319c8-006a-43df-932f-34eebf2e080f" />
+			<string key="time:timestamp" value="2022-05-26 23:18:34.336124+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="26d760ee-a3f5-402a-8d9e-c19ced94425e" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="1271853057039" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-05-24 12:51:25.574308+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="5c3c2742-c668-4e75-a9fa-08f928b126ee" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KA831" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-05-24 13:33:44.641308+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="758347e4-8e89-4cce-a380-dc9e50adfb35" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<int key="RPA_Exec_Nr" value="9017614522237" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-05-24 13:43:54.324375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="274f701b-206a-404b-bdda-f82e1eb92fa9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="RL520" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-06-01 17:19:02.358375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="8b440cb0-63b5-4f0c-bb8d-38fa11e4a61c" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-06-06 09:23:07.444375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="eb1a52c1-227b-4950-9223-38e1215f7004" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AT629" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="0befd3f2-be29-4713-ac88-6e415a5217dd" />
+			<string key="time:timestamp" value="2022-06-10 05:30:17.503375+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="879cada5-89bd-4bef-af7c-466954fd6d53" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="9017614522237" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-05-27 12:35:18.084570+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="20b838e7-b008-4c25-9d40-c270fe813161" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-05-27 13:12:27.101570+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="89c4ba7f-2cab-4121-9a4b-938b760ae707" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<int key="RPA_Exec_Nr" value="5196302155966" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-05-27 13:28:31.431107+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="543c3522-5510-4c75-b708-c42b17631f5b" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DI771" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-05-30 12:10:43.468107+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="6ecb679d-9e41-49fa-8f19-36ee48c69d52" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EL198" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-05-30 12:50:58.538107+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="2397181e-56ee-451d-aeba-cb11049f1544" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="6fe353b5-4c78-49de-aabd-b05fb5d55adb" />
+			<string key="time:timestamp" value="2022-06-03 16:54:08.617107+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="0eb30002-d529-45f1-9f21-eeba4c3e7338" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UN707" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="5196302155966" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="a2882287-0875-4679-964a-fecf901932de" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-05-27 12:44:59.629726+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="58c1a658-12f6-4d58-bcf1-9bd08bb58050" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="DG218" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-05-27 13:25:04.664726+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="82fd000f-22ff-485b-9793-fed9b80ebc4a" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<int key="RPA_Exec_Nr" value="6192616110591" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-05-27 13:32:13.689479+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="61cc7e6c-80f5-4d26-9a88-97b9077a35d1" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-06-04 21:29:24.716479+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b727d7bb-050f-427e-aa4b-ab502a5e40fb" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="JF785" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-06-04 23:16:45.750479+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="6bdf1a6e-dc8f-4e8c-9aef-0821d8c8d0e6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="ER300" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="a2882287-0875-4679-964a-fecf901932de" />
+			<string key="time:timestamp" value="2022-06-08 00:17:01.783479+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="0415274d-bc46-4340-8adf-8b69b7c521e6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="EB184" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6192616110591" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-05-27 13:15:35.342800+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="c8f6baf2-f5a9-4917-a1c6-4958f8419983" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="BZ116" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-05-27 13:28:56.376800+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="d4143e6a-60b3-4b07-b6de-19e855a092bc" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<int key="RPA_Exec_Nr" value="6171537990737" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-05-27 13:37:11.948082+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="23a2fa1b-ac57-483d-b363-468bec02e786" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-06-03 00:15:35.003082+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e0aa678e-64d7-4baf-862c-12b03c5676a6" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="ER300" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-06-06 08:49:36.018082+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="2a79b73b-9e9b-41b1-b0f6-d6946cdfbdbc" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="XU688" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="f296244b-7576-43fa-8e1b-4deea5137fff" />
+			<string key="time:timestamp" value="2022-06-06 09:19:05.107082+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="480237af-4b0a-4187-b087-2b885e4c320d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KE319" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="6171537990737" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+			<string key="time:timestamp" value="2022-05-27 13:06:21.075069+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="a9f76177-cf7b-4d1d-a778-c2c7a5014906" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="PQ162" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7090403943030" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+			<string key="time:timestamp" value="2022-05-27 13:34:50.081069+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="b4608b32-6143-4f6c-b0e6-1b6c91d130ab" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7090403943030" />
+			<int key="RPA_Exec_Nr" value="7090403943030" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+			<string key="time:timestamp" value="2022-05-27 13:46:50.804922+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="2993b919-0ed0-4b58-8aef-8a2d0aa8ef17" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="OG996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7090403943030" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+			<string key="time:timestamp" value="2022-05-30 13:55:12.818922+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="e452f24e-60c5-4653-86fa-3b796b568516" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SV772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7090403943030" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="a4f5fcb2-0dfd-497d-9832-f9911875246b" />
+			<string key="time:timestamp" value="2022-06-01 18:12:37.890922+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="82805aa5-20dd-4028-ba74-d2524c2ef114" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SH912" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="7090403943030" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-05-30 13:04:28.201458+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="9b99227b-4285-4f99-99c2-b2f2d8828445" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="PQ162" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-05-30 13:20:57.254458+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="ad968f2f-d254-4ca7-a1d9-075d64a7b031" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<int key="RPA_Exec_Nr" value="3621685940902" />
+		</event>
+		<event>
+			<string key="concept:name" value="Request documents" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-05-30 13:26:50.120130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="fffbd65a-5368-4143-99b1-a0c45bd9f085" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KD571" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-06-08 02:52:16.173130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="b9896f8e-8743-411e-a028-a522056789d9" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="OG996" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Change transaction type" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-06-17 09:55:38.268130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="017994b9-5db5-4ac0-abef-69858809452d" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="JF785" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-06-17 10:46:47.289130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f0898f0f-3a31-42be-b8af-1e09afc1dafa" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="ER300" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-06-22 02:17:10.303130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="006c6a7c-b525-439a-947d-2da24942c8f7" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AM956" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="e5a71f9d-5cc9-4481-8b1d-1204c6f1b76e" />
+			<string key="time:timestamp" value="2022-06-22 03:25:38.308130+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="abdf40f3-81c6-4c70-8cda-722b1dcd87e2" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SH912" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="3621685940902" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+		<event>
+			<string key="concept:name" value="Loan application received" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-05-30 13:08:34.886004+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="182a797e-aa79-4168-90aa-6ff85a2a9b8c" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="KA831" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check documents RPA" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-05-30 13:25:47.929004+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="true" />
+			<string key="eventId" value="977c5df5-8927-4ff0-b3e0-731be3147b5f" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="UU936" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<int key="RPA_Exec_Nr" value="4700543578509" />
+		</event>
+		<event>
+			<string key="concept:name" value="Determine conditions" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-05-30 13:35:47.194404+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="8f1d88b1-326d-41df-bfd4-b4145792ab55" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="HI689" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Check credibility" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-06-08 12:45:56.239404+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="f8034940-3315-4700-a57d-b0bb652dbdee" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="WF772" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Forward digital transaction" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-06-12 08:21:13.291404+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="74e9bf2d-8d10-4a0a-8a50-a9017ee1f4fc" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="AM956" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+		<event>
+			<string key="concept:name" value="Loan decision" />
+			<string key="caseId" value="56595f50-7b13-4265-9ae2-6aa17125f2e3" />
+			<string key="time:timestamp" value="2022-06-12 10:07:40.360404+0200" />
+			<boolean key="success" value="true" />
+			<boolean key="bot" value="false" />
+			<string key="eventId" value="dd7e05e5-80f2-4b9a-8bd8-56a84cdee873" />
+			<string key="lifecycle:transition" value="start" />
+			<string key="org:resource" value="SH912" />
+			<string key="processName" value="creditProcess" />
+			<int key="DN" value="4700543578509" />
+			<boolean key="RPA_Exec_Nr" value="false" />
+		</event>
+	</trace>
+</log>
