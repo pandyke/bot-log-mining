@@ -8,7 +8,6 @@ from datetime import timezone, datetime, timedelta
 import pytz
 import json
 from os import listdir
-
 from pm4py.objects.log.exporter.xes import exporter as xes_exporter
 from pm4py.objects.conversion.log import converter as log_converter
 
@@ -144,7 +143,7 @@ def uipath_log_to_df(log_lines, connecting_attribute, attr_conceptName, attr_tim
     return df_log
 
 # Parse UiPath log from BPI challenge (Bot_Log_UiPath.log)
-path_uiPath_bot_log = "data/Bot_Log_UiPath.log"
+path_uiPath_bot_log = "data/BPI_Bot_Log_UiPath.log"
 
 file = open(path_uiPath_bot_log, 'r')
 lines = file.read().splitlines()
@@ -171,15 +170,15 @@ df_log = uipath_log_to_df(lines, connecting_attribute, attr_conceptName, attr_ti
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
 log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 
-xes_exporter.apply(log, 'results/Bot_Log_UiPath_parsed.xes')
+xes_exporter.apply(log, 'results/BPI_Bot_Log_UiPath_Parsed.xes')
 
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 pm4py.view_dfg(dfg, start_activities, end_activities)
 
 
-#Parse UiPath real world log from company in financial industry (0522_UiPath_RealWorld_Execution_Log.txt)
-path_uiPath_bot_log = "data/0522_UiPath_RealWorld_Execution_Log.txt"
+#Parse UiPath real world log from company
+path_uiPath_bot_log = "data/Company_Bot_Log_UiPath.txt"
 
 file = open(path_uiPath_bot_log, 'r')
 lines = file.read().splitlines()
@@ -206,7 +205,7 @@ df_log = uipath_log_to_df(lines, connecting_attribute, attr_conceptName, attr_ti
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
 log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 
-xes_exporter.apply(log, 'results/0522_UiPath_RealWorld_Execution_Log_parsed.xes')
+xes_exporter.apply(log, 'results/Company_Bot_Log_UiPath_Parsed.xes')
 
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
@@ -342,7 +341,7 @@ df_log = blueprism_log_to_df(folderPath_bluePrism_bot_logs, resources, versions,
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
 log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 
-xes_exporter.apply(log, 'results/Bot_Log_BluePrism_parsed.xes')
+xes_exporter.apply(log, 'results/BluePrism_Bot_Log_Parsed.xes')
 
 
 #AutomationAnywhere to .xes
@@ -411,4 +410,4 @@ df_log = automationAnywhere_log_to_df(folderPath_AutomationAnywhere_bot_logs, co
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
 log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 
-xes_exporter.apply(log, 'results/Bot_Log_AutomationAnywhere_parsed.xes')
+xes_exporter.apply(log, 'results/AutomationAnywhere_Bot_Log_Parsed.xes')
