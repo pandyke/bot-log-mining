@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log>
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<boolean key="penalty_JLP1" value="false" />
+		<boolean key="penalty_JLP3" value="false" />
+		<int key="number_parcels" value="11" />
+		<boolean key="penalty_JLP2" value="false" />
+		<boolean key="penalty_JLP5" value="false" />
+		<string key="year" value="2015" />
+		<boolean key="penalty_JLP7" value="false" />
+		<boolean key="penalty_JLP6" value="false" />
+		<boolean key="redistribution" value="true" />
+		<float key="amount_applied0" value="6684.43" />
+		<string key="identity:id" value="0072EFC9-7B34-492E-84B0-E327FD9BF3D4" />
+		<boolean key="penalty_V5" value="false" />
+		<float key="payment_actual0" value="6682.81" />
+		<boolean key="penalty_B5F" value="false" />
+		<string key="concept:name" value="-18008661121666966" />
+		<boolean key="penalty_B16" value="false" />
+		<boolean key="penalty_GP1" value="false" />
+		<boolean key="basic payment" value="true" />
+		<boolean key="penalty_AGP" value="false" />
+		<float key="area" value="19.4835" />
+		<boolean key="selected_manually" value="false" />
+		<boolean key="penalty_B3" value="false" />
+		<boolean key="penalty_B2" value="false" />
+		<boolean key="selected_risk" value="false" />
+		<boolean key="penalty_B5" value="false" />
+		<boolean key="penalty_AVBP" value="false" />
+		<boolean key="penalty_B4" value="false" />
+		<boolean key="penalty_B6" value="false" />
+		<boolean key="penalty_ABP" value="false" />
+		<boolean key="penalty_AVGP" value="false" />
+		<boolean key="penalty_C4" value="false" />
+		<boolean key="greening" value="true" />
+		<boolean key="rejected" value="false" />
+		<boolean key="cross_compliance" value="false" />
+		<boolean key="penalty_C9" value="false" />
+		<boolean key="penalty_AVJLP" value="false" />
+		<boolean key="penalty_CC" value="false" />
+		<boolean key="penalty_AVUVP" value="false" />
+		<boolean key="penalty_BGK" value="false" />
+		<boolean key="penalty_C16" value="false" />
+		<boolean key="penalty_BGP" value="false" />
+		<string key="department" value="e7" />
+		<boolean key="small farmer" value="false" />
+		<boolean key="risk_factor" value="true" />
+		<string key="applicant" value="5db93eae19552d62" />
+		<boolean key="penalty_AUVP" value="false" />
+		<boolean key="penalty_BGKV" value="false" />
+		<string key="application" value="d0c4a4241daa1d89" />
+		<boolean key="penalty_amount0" value="false" />
+		<string key="program-id" value="215" />
+		<boolean key="penalty_AJLP" value="false" />
+		<boolean key="selected_random" value="false" />
+		<boolean key="young farmer" value="false" />
+		<float key="amount_applied1" value="nan" />
+		<float key="payment_actual1" value="nan" />
+		<float key="penalty_amount1" value="nan" />
+		<float key="amount_applied2" value="nan" />
+		<float key="payment_actual2" value="nan" />
+		<float key="penalty_amount2" value="nan" />
+		<float key="amount_applied3" value="nan" />
+		<float key="payment_actual3" value="nan" />
+		<float key="penalty_amount3" value="nan" />
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-90066213497253316" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008661121666966" />
+			<boolean key="bot" value="false" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-10-14T11:55:14+02:00" />
+			<string key="identity:id" value="CF0C25B5-A65B-4E65-AD52-2004266AE605" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="0072EFC9-7B34-492E-84B0-E327FD9BF3D4" />
+			<string key="org:resource" value="d8639c" />
+			<string key="concept:name" value="finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-126094972140251607" />
+			<string key="activity" value="save" />
+			<string key="docid" value="-18008661121666966" />
+			<boolean key="bot" value="false" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2016-02-02T11:16:14+01:00" />
+			<string key="identity:id" value="03611D9D-78BA-4F31-AB65-15106935BFDB" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="0072EFC9-7B34-492E-84B0-E327FD9BF3D4" />
+			<string key="org:resource" value="d8639c" />
+			<string key="concept:name" value="save" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-126094972140251521" />
+			<string key="activity" value="check" />
+			<string key="docid" value="-18008661121666966" />
+			<boolean key="bot" value="false" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2016-02-02T11:16:21+01:00" />
+			<string key="identity:id" value="46395409-DA54-4767-8CFB-D09869259829" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="0072EFC9-7B34-492E-84B0-E327FD9BF3D4" />
+			<string key="org:resource" value="d8639c" />
+			<string key="concept:name" value="check" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-126094972140251432" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008661121666966" />
+			<boolean key="bot" value="false" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2016-02-02T11:16:25+01:00" />
+			<string key="identity:id" value="1B840398-C92D-4C50-9BCA-C10D7E272719" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="0072EFC9-7B34-492E-84B0-E327FD9BF3D4" />
+			<string key="org:resource" value="d8639c" />
+			<string key="concept:name" value="finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+	</trace>
+	<trace>
+		<boolean key="penalty_JLP1" value="false" />
+		<boolean key="penalty_JLP3" value="false" />
+		<int key="number_parcels" value="5" />
+		<boolean key="penalty_JLP2" value="false" />
+		<boolean key="penalty_JLP5" value="false" />
+		<string key="year" value="2015" />
+		<boolean key="penalty_JLP7" value="false" />
+		<boolean key="penalty_JLP6" value="false" />
+		<boolean key="redistribution" value="true" />
+		<float key="amount_applied0" value="6684.43" />
+		<string key="identity:id" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+		<boolean key="penalty_V5" value="false" />
+		<float key="payment_actual0" value="6667.91" />
+		<boolean key="penalty_B5F" value="false" />
+		<string key="concept:name" value="-18008662110765809" />
+		<boolean key="penalty_B16" value="false" />
+		<boolean key="penalty_GP1" value="false" />
+		<boolean key="basic payment" value="true" />
+		<boolean key="penalty_AGP" value="false" />
+		<float key="area" value="19.4835" />
+		<boolean key="selected_manually" value="false" />
+		<boolean key="penalty_B3" value="false" />
+		<boolean key="penalty_B2" value="true" />
+		<boolean key="selected_risk" value="false" />
+		<boolean key="penalty_B5" value="false" />
+		<boolean key="penalty_AVBP" value="false" />
+		<boolean key="penalty_B4" value="false" />
+		<boolean key="penalty_B6" value="false" />
+		<boolean key="penalty_ABP" value="false" />
+		<boolean key="penalty_AVGP" value="false" />
+		<boolean key="penalty_C4" value="false" />
+		<boolean key="greening" value="true" />
+		<boolean key="rejected" value="false" />
+		<boolean key="cross_compliance" value="false" />
+		<boolean key="penalty_C9" value="false" />
+		<boolean key="penalty_AVJLP" value="false" />
+		<boolean key="penalty_CC" value="false" />
+		<boolean key="penalty_AVUVP" value="false" />
+		<boolean key="penalty_BGK" value="false" />
+		<boolean key="penalty_C16" value="false" />
+		<boolean key="penalty_BGP" value="false" />
+		<string key="department" value="4e" />
+		<boolean key="small farmer" value="false" />
+		<boolean key="risk_factor" value="true" />
+		<string key="applicant" value="cc57cfc601b1b659" />
+		<boolean key="penalty_AUVP" value="false" />
+		<boolean key="penalty_BGKV" value="false" />
+		<string key="application" value="beb37ac32c4dfd60" />
+		<float key="penalty_amount0" value="14.92" />
+		<string key="program-id" value="215" />
+		<boolean key="penalty_AJLP" value="false" />
+		<boolean key="selected_random" value="false" />
+		<boolean key="young farmer" value="false" />
+		<float key="amount_applied1" value="nan" />
+		<float key="payment_actual1" value="nan" />
+		<float key="penalty_amount1" value="nan" />
+		<float key="amount_applied2" value="nan" />
+		<float key="payment_actual2" value="nan" />
+		<float key="penalty_amount2" value="nan" />
+		<float key="amount_applied3" value="nan" />
+		<float key="payment_actual3" value="nan" />
+		<float key="penalty_amount3" value="nan" />
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008662110765576" />
+			<string key="activity" value="initialize" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-12T14:16:54+02:00" />
+			<string key="identity:id" value="4D62CD67-4A15-433B-9809-D75585AB9690" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="initialize" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008662110765491" />
+			<string key="activity" value="begin editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-12T14:16:54+02:00" />
+			<string key="identity:id" value="7EEDB83D-EDAF-4B88-8A8A-7FC913992438" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="begin editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="b867d59d-1234-44eb-98f8-98c8920d9721" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-12T14:16:54.0900000+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="start auto finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008662110765437" />
+			<string key="botCaseId" value="9c8d658b-ab93-4ecc-850b-37e58d0d0fb4" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="83e23185-4872-4132-a3c3-a78e173b4330" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-12T14:16:54.3800000+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check mandatory fields" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008662110765437" />
+			<string key="botCaseId" value="9c8d658b-ab93-4ecc-850b-37e58d0d0fb4" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="cbb66692-9b80-4a1f-92ec-7a577c638974" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-12T14:16:54.5700000+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check spelling" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008662110765437" />
+			<string key="botCaseId" value="9c8d658b-ab93-4ecc-850b-37e58d0d0fb4" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="9176b549-64f2-4b24-afb3-2c036657f9b5" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-12T14:16:54.7600000+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check consistency" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008662110765437" />
+			<string key="botCaseId" value="9c8d658b-ab93-4ecc-850b-37e58d0d0fb4" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="bf09281a-c1c4-421e-8f93-21fbf5ea63ec" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-12T14:16:54.8500000+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="end auto finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008662110765437" />
+			<string key="botCaseId" value="9c8d658b-ab93-4ecc-850b-37e58d0d0fb4" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008662110765437" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-12T14:16:55+02:00" />
+			<string key="identity:id" value="EB6E8D37-EB6C-414C-84B3-DA2972AA8F81" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="367adf69-0dc6-42d4-9ff5-ac1a68ecd03c" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-15T11:03:30.5000000+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="start auto finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008661097486490" />
+			<string key="botCaseId" value="b3ba2c50-9866-4ea0-9e7f-14a2264e4cdf" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="9b119ec8-5fa9-4d35-9a68-91504590922c" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-15T11:03:32.6000000+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check mandatory fields" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008661097486490" />
+			<string key="botCaseId" value="b3ba2c50-9866-4ea0-9e7f-14a2264e4cdf" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="a581ae14-1213-49fc-832f-861174a10634" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-15T11:03:38.7000000+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check spelling" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008661097486490" />
+			<string key="botCaseId" value="b3ba2c50-9866-4ea0-9e7f-14a2264e4cdf" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="c99701bd-bd53-4e94-8299-59dde7bd6e71" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-15T11:03:47.8000000+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="check consistency" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008661097486490" />
+			<string key="botCaseId" value="b3ba2c50-9866-4ea0-9e7f-14a2264e4cdf" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="51109fdf-322a-4d04-a91d-a279b03b01fd" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<string key="time:timestamp" value="2015-06-15T11:03:48.9000000+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="end auto finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="botProcessName" value="Finish Editing Automatic" />
+			<string key="botProcessVersionNumber" value="1.0.0" />
+			<string key="businessActivityId" value="-18008661097486490" />
+			<string key="botCaseId" value="b3ba2c50-9866-4ea0-9e7f-14a2264e4cdf" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008661097486490" />
+			<string key="activity" value="finish editing" />
+			<string key="docid" value="-18008662110765809" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-15T11:03:50+02:00" />
+			<string key="identity:id" value="18EA01BE-374C-403C-8A6A-58A1FBEB16AC" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="019BB217-A115-4097-A71A-4A609AE7F96A" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="finish editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+	</trace>
+	<trace>
+		<boolean key="penalty_JLP1" value="false" />
+		<boolean key="penalty_JLP3" value="false" />
+		<int key="number_parcels" value="20" />
+		<boolean key="penalty_JLP2" value="false" />
+		<boolean key="penalty_JLP5" value="false" />
+		<string key="year" value="2015" />
+		<boolean key="penalty_JLP7" value="false" />
+		<boolean key="penalty_JLP6" value="false" />
+		<boolean key="redistribution" value="true" />
+		<float key="amount_applied0" value="43403.12" />
+		<string key="identity:id" value="1882CF85-72C2-42DC-A54A-673C471C32EB" />
+		<boolean key="penalty_V5" value="false" />
+		<float key="payment_actual0" value="43336.36" />
+		<boolean key="penalty_B5F" value="false" />
+		<string key="concept:name" value="-18008662112764638" />
+		<boolean key="penalty_B16" value="false" />
+		<boolean key="penalty_GP1" value="false" />
+		<boolean key="basic payment" value="true" />
+		<boolean key="penalty_AGP" value="false" />
+		<float key="area" value="133.6535" />
+		<boolean key="selected_manually" value="false" />
+		<boolean key="penalty_B3" value="false" />
+		<boolean key="penalty_B2" value="true" />
+		<boolean key="selected_risk" value="false" />
+		<boolean key="penalty_B5" value="false" />
+		<boolean key="penalty_AVBP" value="false" />
+		<boolean key="penalty_B4" value="false" />
+		<boolean key="penalty_B6" value="false" />
+		<boolean key="penalty_ABP" value="false" />
+		<boolean key="penalty_AVGP" value="false" />
+		<boolean key="penalty_C4" value="false" />
+		<boolean key="greening" value="true" />
+		<boolean key="rejected" value="false" />
+		<boolean key="cross_compliance" value="false" />
+		<boolean key="penalty_C9" value="false" />
+		<boolean key="penalty_AVJLP" value="false" />
+		<boolean key="penalty_CC" value="false" />
+		<boolean key="penalty_AVUVP" value="false" />
+		<boolean key="penalty_BGK" value="false" />
+		<boolean key="penalty_C16" value="false" />
+		<boolean key="penalty_BGP" value="false" />
+		<string key="department" value="d4" />
+		<boolean key="small farmer" value="false" />
+		<boolean key="risk_factor" value="true" />
+		<string key="applicant" value="b4404ca752b5da0d" />
+		<boolean key="penalty_AUVP" value="false" />
+		<boolean key="penalty_BGKV" value="false" />
+		<string key="application" value="accaf25e4ea7629a" />
+		<float key="penalty_amount0" value="51.98" />
+		<string key="program-id" value="215" />
+		<boolean key="penalty_AJLP" value="false" />
+		<boolean key="selected_random" value="false" />
+		<boolean key="young farmer" value="true" />
+		<float key="amount_applied1" value="nan" />
+		<float key="payment_actual1" value="nan" />
+		<float key="penalty_amount1" value="nan" />
+		<float key="amount_applied2" value="nan" />
+		<float key="payment_actual2" value="nan" />
+		<float key="penalty_amount2" value="nan" />
+		<float key="amount_applied3" value="nan" />
+		<float key="payment_actual3" value="nan" />
+		<float key="penalty_amount3" value="nan" />
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008662112764387" />
+			<string key="activity" value="initialize" />
+			<string key="docid" value="-18008662112764638" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-12T11:40:20+02:00" />
+			<string key="identity:id" value="E8A80404-9A60-4581-B874-7597449FD250" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="1882CF85-72C2-42DC-A54A-673C471C32EB" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="initialize" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+		<event>
+			<string key="note" value="none" />
+			<string key="eventId" value="-18008662112764253" />
+			<string key="activity" value="begin editing" />
+			<string key="docid" value="-18008662112764638" />
+			<boolean key="bot" value="true" />
+			<string key="subprocess" value="Main" />
+			<date key="time:timestamp" value="2015-06-12T11:40:20+02:00" />
+			<string key="identity:id" value="ADA9C777-9CA7-4127-BAD0-1A540DF0E13B" />
+			<string key="doctype" value="Parcel document" />
+			<string key="caseId" value="1882CF85-72C2-42DC-A54A-673C471C32EB" />
+			<string key="org:resource" value="Document processing automaton" />
+			<string key="concept:name" value="begin editing" />
+			<boolean key="success" value="true" />
+			<string key="lifecycle:transition" value="complete" />
+			<float key="botProcessName" value="nan" />
+			<float key="botProcessVersionNumber" value="nan" />
+			<float key="businessActivityId" value="nan" />
+			<float key="botCaseId" value="nan" />
+		</event>
+	</trace>
+</log>
