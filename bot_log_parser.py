@@ -13,6 +13,7 @@ from pm4py.objects.log.exporter.xes import exporter as xes_exporter
 from pm4py.objects.conversion.log import converter as log_converter
 
 #UiPath to .xes
+#Define parsing function
 def uipath_log_to_df(log_lines, connecting_attribute, attr_conceptName, attr_timestamp, attr_lifecycle, valuesLifecycle,
                      standardValueLifecycle, attr_eventId, attr_caseId, attr_resource, attr_botProcessName,
                      attr_botProcessVersionNumber, attr_succcess, valueNoSuccess, traceLevelOnly):
