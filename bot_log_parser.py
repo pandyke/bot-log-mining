@@ -173,11 +173,13 @@ log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.V
 
 xes_exporter.apply(log, 'results/Bot_Log_UiPath_parsed.xes')
 
+#Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 pm4py.view_dfg(dfg, start_activities, end_activities)
 
-### Parse UiPath real world log from company in financial industry (0522_UiPath_RealWorld_Execution_Log.txt)
-path_uiPath_bot_log = "data/0522_UiPath_RealWorld_Execution_Log_2.txt"
+
+#Parse UiPath real world log from company in financial industry (0522_UiPath_RealWorld_Execution_Log.txt)
+path_uiPath_bot_log = "data/0522_UiPath_RealWorld_Execution_Log.txt"
 
 file = open(path_uiPath_bot_log, 'r')
 lines = file.read().splitlines()
@@ -206,5 +208,207 @@ log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.V
 
 xes_exporter.apply(log, 'results/0522_UiPath_RealWorld_Execution_Log_parsed.xes')
 
+#Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 pm4py.view_dfg(dfg, start_activities, end_activities)
+
+
+#BluePrism to .xes
+folderPath_bluePrism_bot_logs = "data/BluePrism_Logs/"
+
+attr_conceptName = 'StageName'
+attr_timestamp_start = 'Resource Start'
+attr_timestamp_end = 'Resource End'
+attr_eventId = 'StageID'
+attr_botProcessName = 'Process'
+attr_succcess = 'Result'
+
+#Define parsing function
+def blueprism_log_to_df(folder_path, resources_list, version_nr_list, connecting_attribute, attr_conceptName, attr_timestamp_start,
+                        attr_timestamp_end, attr_eventId, attr_botProcessName, attr_succcess):
+    """
+    Converts a BluePrism log to a dataframe.
+    The function is aborted, if one of the attributes given as inputs is not found in the log.
+
+    Parameters
+    -----------
+    folder_path
+        The path to a folder containing BluePrism logs as csv files. Each csv file is treated as ne trace
+    resources_list
+        A list of names of the resources that executed the traces. Has to be of the same length as the traces (csvs) provided
+    version_nr_list
+        A list of bot process version numbers. Has to be of the same length as the traces (csvs) provided
+    connecting_attribute
+        The name of the connecting attribute that is later used to merge the bot log with a business process log
+    attr_conceptName
+        The name of the attribute whose value is used for the concept:name attribute in the resulting xes log
+    attr_timestamp_start
+        The name of the attribute that contains the start timestamps
+    attr_timestamp_end
+        The name of the attribute that contains the end timestamps
+    attr_eventId
+        The name of the attribute whose value is used for the eventId attribute in the resulting xes log
+    attr_botProcessName
+        The name of the attribute whose value is used for the botProcessName attribute in the resulting xes log
+    attr_succcess
+        The name of the attribute whose value is used for the success attribute in the resulting xes log
+
+    Returns
+    -----------
+    df_log
+        The BluePrism log converted to a dataframe
+    """
+    
+    filenames = listdir(folder_path)
+    file_paths = [ filename for filename in filenames if filename.endswith( ".csv" ) ]
+    
+    current_traceId = 0
+    dfs_list = []
+    if len(resources_list) != len(file_paths):
+        print("Length of the resources_list has to match the number of csv files in folder_path. Function is aborted")
+        return
+    if len(version_nr_list) != len(file_paths):
+        print("Length of the version_nr_list has to match the number of csv files in folder_path. Function is aborted")
+        return
+    for currentPath in file_paths:
+        current_traceId = current_traceId + 1
+        current_df = pd.read_csv(folder_path + currentPath, index_col=None, header=0)
+        current_df["case:caseId"] = current_traceId
+        current_df["botProcessVersionNumber"] = version_nr_list[current_traceId-1]
+        current_df["org:resource"] = resources_list[current_traceId-1]
+        dfs_list.append(current_df)
+        
+    df_log = pd.concat(dfs_list, axis=0, ignore_index=True)
+            
+    column_names = df_log.columns
+    attributes_not_found = {connecting_attribute, attr_conceptName, attr_timestamp_start, attr_timestamp_end, attr_eventId,
+                           attr_botProcessName, attr_succcess}
+    for column in column_names:
+        #Check if name of attribute is a substring in the column name
+        if connecting_attribute in column:
+            df_log.rename(columns={column: connecting_attribute}, inplace=True)
+            attributes_not_found.discard(connecting_attribute)
+        elif attr_conceptName in column:
+            df_log.rename(columns={column: 'concept:name'}, inplace=True)
+            attributes_not_found.discard(attr_conceptName)
+        elif attr_timestamp_start in column:
+            df_log.rename(columns={column: 'timestamp_start'}, inplace=True)
+            attributes_not_found.discard(attr_timestamp_start)
+        elif attr_timestamp_end in column:
+            df_log.rename(columns={column: 'timestamp_end'}, inplace=True)
+            attributes_not_found.discard(attr_timestamp_end)
+        elif attr_eventId in column:
+            df_log.rename(columns={column: 'eventId'}, inplace=True)
+            attributes_not_found.discard(attr_eventId)
+        elif attr_botProcessName in column and column != "botProcessVersionNumber":
+            df_log.rename(columns={column: 'botProcessName'}, inplace=True)
+            attributes_not_found.discard(attr_botProcessName)
+        if attr_succcess == column:
+            success_col = column
+            attributes_not_found.discard(attr_succcess)
+    
+    if len(attributes_not_found) > 0:
+        print("The following attributes were not found in the log, function is aborted: ", attributes_not_found)
+        return
+    else:
+        print("Found all attributes in the log that were provided as inputs")
+            
+    df_log['time:timestamp'] = df_log.apply(lambda x: x['timestamp_start'] if not pd.isnull(x['timestamp_start']) else
+                                            x['timestamp_end'], axis=1)
+    df_log['time:timestamp'] = df_log.apply(lambda x: datetime.strptime(x['time:timestamp'], '%d-%m-%Y %H:%M:%S'), axis=1)
+    
+    timezone = pytz.timezone('Europe/Berlin')
+    df_log['time:timestamp'] = df_log.apply(lambda x: timezone.localize(x['time:timestamp']), axis=1)
+    
+    df_log['time:timestamp'] = df_log['time:timestamp'].dt.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
+    #df_log['time:timestamp'] =  pd.to_datetime(df_log['time:timestamp'], utc=False)
+    
+    df_log['success'] = df_log.apply(lambda x: "false" if "ERROR" in str(x[success_col]) else "true", axis=1)
+    df_log['lifecycle:transition'] = df_log.apply(lambda x: "ate:abort" if x["success"] == "false" else
+                                                  "start" if not pd.isnull(x["timestamp_start"]) else 
+                                                  "complete" if not pd.isnull(x["timestamp_end"]) else
+                                                  "complete", axis=1)
+    df_log = df_log[['case:caseId', 'concept:name', 'time:timestamp', 'eventId', 'org:resource',
+                     'botProcessName', 'botProcessVersionNumber', 'success', 'lifecycle:transition', connecting_attribute]]
+        
+    return df_log
+
+resources = ["bot1"]
+versions = ["1.0.0"]
+
+df_log = blueprism_log_to_df(folderPath_bluePrism_bot_logs, resources, versions,'Value', attr_conceptName, attr_timestamp_start,
+                             attr_timestamp_end, attr_eventId, attr_botProcessName, attr_succcess)
+
+parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
+log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
+
+xes_exporter.apply(log, 'results/Bot_Log_BluePrism_parsed.xes')
+
+
+#AutomationAnywhere to .xes
+folderPath_AutomationAnywhere_bot_logs = "data/AutomationAnywhere_Logs/"
+
+#Define parsing function
+def automationAnywhere_log_to_df(folder_path, column_names, attr_succcess, lifecycle_value):
+    """
+    Converts an AutomationAnywhere log to a dataframe.
+    The function is aborted, if one of the attributes given as inputs is not found in the log.
+
+    Parameters
+    -----------
+    folder_path
+        The path to a folder containing AutomationAnywhere logs as csv files
+    column_names
+        A list of names that are used for the columns. The list has to include: "time:timestamp", "concept:name",
+        "botProcessName", "org:resource", "case:caseId", "eventId", "botProcessVersionNumber", "connectingAttribute"
+    attr_succcess
+        The name of the attribute whose value is used for the success attribute in the resulting xes log
+    lifecycle_value
+        The standard value that should be set for the lifecycle:transition attribute ("start" or "complete")
+
+    Returns
+    -----------
+    df_log
+        The AutomationAnywhere log converted to a dataframe
+    """
+    
+    if lifecycle_value != "start" and lifecycle_value != "complete":
+        print("The lifecycle_value must be 'start' or 'complete'. Function is aborted")
+        return
+    if attr_succcess not in column_names:
+        print("The attr_succcess must be in the column_names list. Function is aborted")
+        return
+    
+    filenames = listdir(folder_path)
+    file_paths = [ filename for filename in filenames if filename.endswith( ".csv" ) ]
+
+    dfs_list = []
+    for currentPath in file_paths:
+        current_df = pd.read_csv(folder_path + currentPath, index_col=None, sep=";", names=column_names)
+        dfs_list.append(current_df)
+
+    df_log = pd.concat(dfs_list, axis=0, ignore_index=True)
+    
+    df_log['time:timestamp'] = df_log.apply(lambda x: datetime.strptime(x['time:timestamp'], '(%d-%m-%Y %H:%M:%S) '), axis=1)
+    timezone = pytz.timezone('Europe/Berlin')
+    df_log['time:timestamp'] = df_log.apply(lambda x: timezone.localize(x['time:timestamp']), axis=1)
+    df_log['time:timestamp'] = df_log['time:timestamp'].dt.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
+    
+    df_log['success'] = df_log.apply(lambda x: "false" if "ERROR" in str(x[attr_succcess]) else "true", axis=1)
+    df_log['lifecycle:transition'] = df_log.apply(lambda x: "ate:abort" if x["success"] == "false" else lifecycle_value, axis=1)
+    df_log = df_log[['case:caseId', 'concept:name', 'time:timestamp', 'eventId', 'org:resource',
+                     'botProcessName', 'botProcessVersionNumber', 'success', 'lifecycle:transition', 'connectingAttribute']]
+        
+    return df_log
+
+column_names = ["time:timestamp", "concept:name", "botProcessName", "org:resource", "case:caseId", "eventId",
+                "botProcessVersionNumber", "connectingAttribute"]
+attr_succcess = "concept:name"
+lifecycle_value = "complete"
+
+df_log = automationAnywhere_log_to_df(folderPath_AutomationAnywhere_bot_logs, column_names, attr_succcess, lifecycle_value)
+
+parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'case:caseId'}
+log = log_converter.apply(df_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
+
+xes_exporter.apply(log, 'results/Bot_Log_AutomationAnywhere_parsed.xes')
