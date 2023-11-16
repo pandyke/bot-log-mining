@@ -1,6 +1,6 @@
-# Log Merger
+#Log Merger
 
-#imports
+#Imports
 import pm4py
 import pandas as pd
 import numpy as np
@@ -83,24 +83,24 @@ def merge_logs(df_log_business_process, df_log_bot,
 path_business_process_log = 'data/BPI_BusinessProcess_Log.xes'
 path_bot_log = 'results/BPI_Bot_Log_UiPath_Parsed.xes'
 
-#load the business process event log
+#Load the business process event log
 log_bp = xes_importer.apply(path_business_process_log)
 df_log_business_process = log_converter.apply(log_bp, variant=log_converter.Variants.TO_DATA_FRAME)
-#preprocess
+#Preprocess
 df_log_business_process.rename(columns={"eventid": "eventId", "docid_uuid": "caseId"}, inplace=True)
 
-#load the bot log
+#Load the bot log
 log_bot = xes_importer.apply(path_bot_log)
 df_log_bot = log_converter.apply(log_bot, variant=log_converter.Variants.TO_DATA_FRAME)
-#preprocess
+#Preprocess
 df_log_bot.rename(columns={"case:caseId": "botCaseId"}, inplace=True)
 df_log_bot.drop(['case:concept:name'], axis=1, inplace=True)
 df_log_bot["bot"] = True
 
-#merge logs
+#Merge logs
 df_merged_log = merge_logs(df_log_business_process, df_log_bot, 'eventId', 'businessActivityId', show_progress=True)
 
-#save
+#Save
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'caseId'}
 merged_log = log_converter.apply(df_merged_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 xes_exporter.apply(merged_log, 'results/BPI_Merged_Log.xes')
@@ -112,29 +112,29 @@ xes_exporter.apply(merged_log, 'results/BPI_Merged_Log.xes')
 path_business_process_log = 'data/Company_BusinessProcess_Log.xes'
 path_bot_log = 'results/Company_Bot_Log_UiPath_Parsed.xes'
 
-#load the business process event log
+#Load the business process event log
 log_bp = xes_importer.apply(path_business_process_log)
 df_log_business_process = log_converter.apply(log_bp, variant=log_converter.Variants.TO_DATA_FRAME)
 
-#load the bot log
+#Load the bot log
 log_bot = xes_importer.apply(path_bot_log)
 df_log_bot = log_converter.apply(log_bot, variant=log_converter.Variants.TO_DATA_FRAME)
-#preprocess
+#Preprocess
 df_log_bot.rename(columns={"case:caseId": "botCaseId"}, inplace=True)
 df_log_bot.drop(['case:concept:name'], axis=1, inplace=True)
 df_log_bot["bot"] = True
 
-#merge logs
+#Merge logs
 df_merged_log = merge_logs(df_log_business_process, df_log_bot, 'RPA_Exec_Nr', 'Ordnungsbegriff', show_progress=True)
 
 df_merged_log['time:timestamp'] = pd.to_datetime(df_merged_log['time:timestamp'])
 df_merged_log.sort_values(by='time:timestamp')
 
-#save
+#Save
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'caseId'}
 merged_log = log_converter.apply(df_merged_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 xes_exporter.apply(merged_log, 'results/Company_Merged_Log.xes')
 
-#visualize as directly follows graph
+#Visualize as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
 pm4py.view_dfg(dfg, start_activities, end_activities)

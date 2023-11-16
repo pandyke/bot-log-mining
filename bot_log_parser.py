@@ -1,6 +1,6 @@
-# Bot Log Parser
+#Bot Log Parser
 
-#imports
+#Imports
 import pm4py
 import pandas as pd
 import numpy as np
@@ -142,7 +142,7 @@ def uipath_log_to_df(log_lines, connecting_attribute, attr_conceptName, attr_tim
         
     return df_log
 
-# Parse UiPath log from BPI challenge (Bot_Log_UiPath.log)
+#Parse UiPath log from BPI challenge (Bot_Log_UiPath.log)
 path_uiPath_bot_log = "data/BPI_Bot_Log_UiPath.log"
 
 file = open(path_uiPath_bot_log, 'r')
