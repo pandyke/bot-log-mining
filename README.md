@@ -46,4 +46,6 @@ To run the file, execute the following command:
 python3 measures.py
 ```
 In the following an explanation of all 12 measures is provided that is based on the algorithms in the file `measures.py`:
+![Alt text](https://github.com/pandyke/bot-log-mining/blob/main/measure_formalizations/Measure_formalizations_legend.JPG?raw=true "Definitions")
+
 ![Alt text](https://github.com/pandyke/bot-log-mining/blob/main/measure_formalizations/Measure_formalizations.JPG?raw=true "Measure formalizations")
