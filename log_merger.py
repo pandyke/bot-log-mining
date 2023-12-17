@@ -61,14 +61,17 @@ def merge_logs(df_log_business_process, df_log_bot,
                 print("else")
             
             for add_col in additional_columns:
-                bot_events[add_col] = bp_event[add_col]
+                add_col_value = bp_event[add_col]
+                #bot_events[add_col] = add_col_value
+                bot_events.insert(0, add_col, add_col_value)
                 
-            df_merged = df_merged.append(bot_events, ignore_index=False)
+            df_merged = pd.concat([df_merged, bot_events],ignore_index=False)
+            #df_merged.append(bot_events, ignore_index=False)
     
         if show_progress:
-                progress_counter = progress_counter + 1
-                if progress_counter % 100 == 0:
-                    print(progress_counter, " of ", len(df_log_business_process), " business process events")
+            progress_counter = progress_counter + 1
+            if progress_counter % 100 == 0:
+                print(progress_counter, " of ", len(df_log_business_process), " business process events")
                     
     df_merged = df_merged.sort_index().reset_index(drop=True)
     
@@ -126,7 +129,7 @@ df_log_bot["bot"] = True
 #Merge logs
 df_merged_log = merge_logs(df_log_business_process, df_log_bot, 'RPA_Exec_Nr', 'Ordnungsbegriff', show_progress=True)
 
-df_merged_log['time:timestamp'] = pd.to_datetime(df_merged_log['time:timestamp'])
+df_merged_log['time:timestamp'] = pd.to_datetime(df_merged_log['time:timestamp'], format='mixed')
 df_merged_log.sort_values(by='time:timestamp')
 
 #Save
@@ -135,5 +138,5 @@ merged_log = log_converter.apply(df_merged_log, parameters=parameters, variant=l
 xes_exporter.apply(merged_log, 'results/Company_Merged_Log.xes')
 
 #Visualize as directly follows graph
-dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
-pm4py.view_dfg(dfg, start_activities, end_activities)
+#dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
+#pm4py.view_dfg(dfg, start_activities, end_activities)
