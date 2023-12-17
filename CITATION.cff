@@ -4,7 +4,7 @@ authors:
 - family-names: "Egger"
   given-names: "Andreas"
   orcid: "https://orcid.org/0000-0001-5580-4274"
-title: "Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining"
+title: "Bot Log Mining: An Approach to Integrated Analysis in Robotic Process Automation and Process Mining"
 url: "https://github.com/pandyke/bot-log-mining"
 preferred-citation:
   type: article
@@ -32,7 +32,7 @@ preferred-citation:
   # month: 0
   # start: 000
   # end: 000
-  title: "Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining"
+  title: "Bot Log Mining: An Approach to Integrated Analysis in Robotic Process Automation and Process Mining"
   # issue: 0
   # volume: 0
   year: 2024
