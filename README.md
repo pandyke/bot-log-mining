@@ -1,7 +1,7 @@
 # Repository under construction
 
 
-# Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining
+# Bot Log Mining: An Approach to Integrated Analysis in Robotic Process Automation and Process Mining
 
 This repository contains the source code for our paper "Bot Log Mining: An Approach for integrated Analysis in Robotic Process Automation and Process Mining". 
 For a more comprehensive overview of the approach we refer to the paper.
