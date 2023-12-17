@@ -22,8 +22,29 @@ pip install -r requirements.txt
 ## Bot Log Parser
 
 The file `bot_log_parser.py` parses the...
-The resulting DataFrames are saved to the path `data/predicted`
+The resulting DataFrames are saved to the folder `results`.
 To run the file, execute the following command:
 ```
 python3 bot_log_parser.py
 ```
+
+
+## Log Merger
+
+The file `log_merger.py` merges the...
+The resulting DataFrames are saved to the folder `results`.
+To run the file, execute the following command:
+```
+python3 log_merger.py
+```
+
+
+## Log Merger
+
+The file `measures.py` includes the...
+The resulting DataFrames are saved to the folder `results`.
+To run the file, execute the following command:
+```
+python3 measures.py
+```
+
