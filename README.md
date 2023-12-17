@@ -18,8 +18,9 @@ pip install -r requirements.txt
 
 ## Bot Log Parser
 
-The file `bot_log_parser.py` parses the...
-The resulting DataFrames are saved to the folder `results`.
+The file `bot_log_parser.py` parses bot logs into the XES process mining format.
+It uses several bot logs from the `data` folder and the resulting XES files are saved to the `results` folder.
+Depending on the use case and on specific format of a bot log, different attributes values are needed as input and can be configured in the file.
 To run the file, execute the following command:
 ```
 python3 bot_log_parser.py
@@ -28,8 +29,10 @@ python3 bot_log_parser.py
 
 ## Log Merger
 
-The file `log_merger.py` merges the...
-The resulting DataFrames are saved to the folder `results`.
+The file `log_merger.py` merges XES-parsed bot logs with corresponding business process event logs.
+It uses business process event logs from the `data` folder and XES-parsed bot logs from the `results` folder.
+The resulting merged logs are saved to the `results` folder.
+As input attributes the name of the connecting attribute in the business process event log as well as the name of the connecting attribute in the bot log are needed and can be configured in the file.
 To run the file, execute the following command:
 ```
 python3 log_merger.py
@@ -38,9 +41,9 @@ python3 log_merger.py
 
 ## Measures
 
-The file `measures.py` includes the...
-The resulting DataFrames are saved to the folder `results`.
-The specific measure that should be executed can be adapted in the code.
+The file `measures.py` includes 12 measures that are specifically tailored to analyze merged bot and process event logs to enable an end-to-end analysis of RPA-enabled business processes.
+It uses a merged log from the `results` folder and outputs a directly-follows graph or a CSV file, depending on the selected measure. The output is saved to the `results` folder.
+The exact measure that should be executed as well as the exact merged log that the selected measure should be applied on can be selected at the end of the file.
 To run the file, execute the following command:
 ```
 python3 measures.py
