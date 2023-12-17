@@ -5,7 +5,6 @@ import pm4py
 import pandas as pd
 import numpy as np
 from datetime import timezone, datetime, timedelta
-import pytz
 import json
 from os import listdir
 from pm4py.objects.log.importer.xes import importer as xes_importer
