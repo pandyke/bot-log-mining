@@ -10,6 +10,7 @@ import json
 from os import listdir
 from pm4py.objects.log.exporter.xes import exporter as xes_exporter
 from pm4py.objects.conversion.log import converter as log_converter
+from pm4py.visualization.dfg import visualizer as dfg_visualization
 
 #UiPath to .xes
 #Define parsing function
@@ -174,7 +175,9 @@ xes_exporter.apply(log, 'results/BPI_Bot_Log_UiPath_Parsed.xes')
 
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
-pm4py.view_dfg(dfg, start_activities, end_activities)
+#pm4py.view_dfg(dfg, start_activities, end_activities)
+#dfg_visualization.save(dfg, "results/graphs/" + 'dfg_BPI_Bot_Log_UiPath_Parsed.png')
+pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_BPI_Bot_Log_UiPath_Parsed.png')
 
 
 #Parse UiPath real world log from company
