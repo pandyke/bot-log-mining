@@ -212,7 +212,7 @@ xes_exporter.apply(log, 'results/Company_Bot_Log_UiPath_Parsed.xes')
 
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
-pm4py.view_dfg(dfg, start_activities, end_activities)
+#pm4py.view_dfg(dfg, start_activities, end_activities)
 
 
 #BluePrism to .xes
