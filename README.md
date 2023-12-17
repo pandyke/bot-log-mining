@@ -1,6 +1,3 @@
-# Repository under construction
-
-
 # Bot Log Mining: An Approach to Integrated Analysis in Robotic Process Automation and Process Mining
 
 This repository contains the source code and online appendix for our paper 'Bot Log Mining: An Approach to Integrated Analysis in Robotic Process Automation and Process Mining'. 
@@ -39,12 +36,14 @@ python3 log_merger.py
 ```
 
 
-## Log Merger
+## Measures
 
 The file `measures.py` includes the...
 The resulting DataFrames are saved to the folder `results`.
+The specific measure that should be executed can be adapted in the code.
 To run the file, execute the following command:
 ```
 python3 measures.py
 ```
+A formalization of the 12 measures can be found in the following:
 
