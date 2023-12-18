@@ -8,14 +8,15 @@ import pandas as pd
 import numpy as np
 from datetime import timezone, datetime, timedelta
 from graphviz import Digraph
-from IPython.display import display
+#from IPython.display import display
 from pm4py.objects.log.util import interval_lifecycle
 from pm4py.statistics.attributes.log import get as attr_get
 from pm4py.objects.dfg.utils import dfg_utils
 from pm4py.util import xes_constants as xes
 from pm4py.visualization.common.utils import *
 from pm4py.util import exec_utils
-from pm4py.visualization.dfg.parameters import Parameters
+#from pm4py.visualization.dfg.parameters import Parameters
+from pm4py.visualization.dfg.variants.cost import Parameters
 from pm4py.visualization.dfg import visualizer as dfg_visualization
 from pm4py.visualization.common import gview
 from pm4py.visualization.common import save as gsave
