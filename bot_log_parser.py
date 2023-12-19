@@ -34,8 +34,8 @@ def uipath_log_to_df(log_lines, connecting_attribute, attr_conceptName, attr_tim
     attr_lifecycle
         The name of the attribute whose value is used for the lifecycle:transition attribute in the resulting xes log
     valuesLifecycle
-        The values of the attr_lifecycle which indicate the status 'ate:abort', 'start', 'complete' respectively,
-        e.g. 'Faulted', 'Executing', 'Closed'
+        The values of the attr_lifecycle which indicate the status 'start', 'complete' respectively,
+        e.g. 'Executing', 'Closed'
     standardValueLifecycle
         The fallback standard value for attr_lifecycle if no valuesLifecycle matches (e.g. 'start' or 'complete')
     attr_eventId
@@ -123,12 +123,7 @@ def uipath_log_to_df(log_lines, connecting_attribute, attr_conceptName, attr_tim
             
     df_log['success'] = df_log.apply(lambda x: False if x[success_col] == valueNoSuccess else True, axis=1)
     
-    valueAbort, valueStart, valueComplete = valuesLifecycle
-    #df_log['lifecycle:transition'] = df_log.apply(lambda x: "ate:abort" if x[lifecycle_col] == valueAbort else
-    #                                              "start" if x[lifecycle_col] == valueStart else 
-    #                                              "complete" if x[lifecycle_col] == valueComplete else
-    #                                              standardValueLifecycle, axis=1)
-    #New version where lifecycle is not set to ate:abort
+    valueStart, valueComplete = valuesLifecycle
     df_log['lifecycle:transition'] = df_log.apply(lambda x: "start" if x[lifecycle_col] == valueStart else 
                                                             "complete" if x[lifecycle_col] == valueComplete else
                                                             standardValueLifecycle, axis=1)
@@ -154,7 +149,7 @@ connecting_attribute = 'businessActivityId'
 attr_conceptName = 'DisplayName'
 attr_timestamp = 'timeStamp'
 attr_lifecycle = 'State'
-valuesLifecycle = ['Faulted', 'Executing', 'Closed']
+valuesLifecycle = ['Executing', 'Closed']
 standardValueLifecycle = "complete"
 attr_eventId = 'fingerprint'
 attr_caseId = 'jobId'
@@ -326,10 +321,10 @@ def blueprism_log_to_df(folder_path, resources_list, version_nr_list, connecting
     #df_log['time:timestamp'] =  pd.to_datetime(df_log['time:timestamp'], utc=False)
     
     df_log['success'] = df_log.apply(lambda x: "false" if "ERROR" in str(x[success_col]) else "true", axis=1)
-    df_log['lifecycle:transition'] = df_log.apply(lambda x: "ate:abort" if x["success"] == "false" else
-                                                  "start" if not pd.isnull(x["timestamp_start"]) else 
+    df_log['lifecycle:transition'] = df_log.apply(lambda x: "start" if not pd.isnull(x["timestamp_start"]) else 
                                                   "complete" if not pd.isnull(x["timestamp_end"]) else
                                                   "complete", axis=1)
+
     df_log = df_log[['case:caseId', 'concept:name', 'time:timestamp', 'eventId', 'org:resource',
                      'botProcessName', 'botProcessVersionNumber', 'success', 'lifecycle:transition', connecting_attribute]]
         
@@ -397,7 +392,7 @@ def automationAnywhere_log_to_df(folder_path, column_names, attr_succcess, lifec
     df_log['time:timestamp'] = df_log['time:timestamp'].dt.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
     
     df_log['success'] = df_log.apply(lambda x: "false" if "ERROR" in str(x[attr_succcess]) else "true", axis=1)
-    df_log['lifecycle:transition'] = df_log.apply(lambda x: "ate:abort" if x["success"] == "false" else lifecycle_value, axis=1)
+    df_log['lifecycle:transition'] = df_log.apply(lambda x: lifecycle_value, axis=1)
     df_log = df_log[['case:caseId', 'concept:name', 'time:timestamp', 'eventId', 'org:resource',
                      'botProcessName', 'botProcessVersionNumber', 'success', 'lifecycle:transition', 'connectingAttribute']]
         
