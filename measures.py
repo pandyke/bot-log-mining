@@ -1553,7 +1553,7 @@ def apply_measure(df_log, log_name, dfg, log, measure_name, attr_activity, attr_
 # Value to execute all measures at once: 'all_measures'
 
 #choose measure
-selected_measure = 'all_measures'
+selected_measure = 'exception_time_impact'
 #choose log ('company' or 'bpi')
 selected_log = 'company'
 
