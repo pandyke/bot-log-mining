@@ -1,0 +1,15 @@
+activity;performed by bot;performed by bot in %;performed manually;performed manually in %
+initialize;4838;96.68;166;3.32
+begin editing;4740;94.72;264;5.28
+check;311;6.56;4431;93.44
+finish editing;6464;41.07;9274;58.93
+save;448;3.8;11338;96.2
+insert document;110;3.35;3177;96.65
+start auto finish editing;6464;100.0;0;0.0
+check mandatory fields;6464;100.0;0;0.0
+check spelling;6464;100.0;0;0.0
+check consistency;6464;100.0;0;0.0
+end auto finish editing;6464;100.0;0;0.0
+discard;0;0.0;4;100.0
+remove document;0;0.0;4;100.0
+change department;0;0.0;3;100.0

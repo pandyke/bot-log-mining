@@ -760,6 +760,8 @@ def measure_exception_time_variance(df_log, attr_activity, attr_success, attr_bo
             exception_time_variance_fail[str(activity)] = variance_time_to_end_fails
             exception_time_variance_no_fail[str(activity)] = variance_time_to_end_no_fails
             var_diff_value = variance_time_to_end_fails - variance_time_to_end_no_fails
+            if np.isnan(var_diff_value):
+                var_diff_value = 0
             exception_time_variance_diff[str(activity)] = var_diff_value
         
         performed_by_list = list(df_activity_only[attr_bot].unique())
@@ -1529,12 +1531,12 @@ def apply_measure(df_log, log_name, dfg, log, measure_name, attr_activity, attr_
                                         show_edge_labels=show_edge_labels, log=log, max_no_of_edges=max_no_of_edges)
         #dfg_visualization.view(gviz)
         if save_result:
-            save_name = 'dfg_' + selected_log +'_' + measure + '.png'
+            save_name = 'dfg_' + selected_log +'_' + measure_name + '.png'
             dfg_visualization.save(gviz, "results/measure_outputs/graphs/" + save_name)
         return gviz
     else:
         if save_result:
-            save_name = 'df_' + selected_log +'_' + measure + '.csv'
+            save_name = 'df_' + selected_log +'_' + measure_name + '.csv'
             result_df.to_csv("results/measure_outputs/csvs/" + save_name, index=False, sep=';')
         return result_df
 
@@ -1551,9 +1553,9 @@ def apply_measure(df_log, log_name, dfg, log, measure_name, attr_activity, attr_
 # Value to execute all measures at once: 'all_measures'
 
 #choose measure
-selected_measure = 'exception_time_impact'
+selected_measure = 'all_measures'
 #choose log ('company' or 'bpi')
-selected_log = 'company'
+selected_log = 'bpi'
 
 def standard_values_for_logs(log_name):
     """
@@ -1590,10 +1592,10 @@ def standard_values_for_logs(log_name):
         #Names/keys of the respective attributes in the log
         attr_activity = 'concept:name'
         attr_timestamp = 'time:timestamp'
-        attr_traceID = 'docid_uuid'
+        attr_traceID = 'docid'
         attr_success = 'success'
         attr_bot = 'bot'
-        attr_eventid = 'eventid'
+        attr_eventid = 'eventId'
         attr_lifecycle = 'lifecycle:transition'
         log_bpi, df_log_bpi, dfg_bpi = load_merged_log_and_preprocess(path, attr_lifecycle, attr_timestamp, True)
         df_log_bpi = preprocess_add_columns(df_log_bpi, attr_traceID, attr_timestamp, attr_activity, attr_eventid, attr_bot)

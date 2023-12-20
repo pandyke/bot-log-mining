@@ -101,6 +101,8 @@ df_log_bot["bot"] = True
 
 #Merge logs
 df_merged_log = merge_logs(df_log_business_process, df_log_bot, 'eventId', 'businessActivityId', show_progress=True)
+df_merged_log['time:timestamp'] = pd.to_datetime(df_merged_log['time:timestamp'], format='mixed')
+df_merged_log.sort_values(by='time:timestamp')
 
 #Save
 parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 'caseId'}
