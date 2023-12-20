@@ -43,7 +43,7 @@ python3 log_merger.py
 
 The file `measures.py` includes 12 measures that are specifically tailored to analyze merged bot and process event logs to enable an end-to-end analysis of RPA-enabled business processes.
 It uses a merged log from the `results` folder and outputs a directly-follows graph or a CSV file, depending on the selected measure. The output is saved to the `results` folder.
-The exact measure that should be executed as well as the exact merged log that the selected measure should be applied on can be selected at the end of the file.
+The exact measure that should be executed as well as the exact merged log that the selected measure should be applied on can be defined at the end of the file.
 To run the file, execute the following command:
 ```
 python3 measures.py
