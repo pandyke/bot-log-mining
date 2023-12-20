@@ -1,0 +1,100 @@
+activity;performed by bot;performed by bot in %;performed manually;performed manually in %
+Kein Auslesen von 4-6 notwendig;19;100.0;0;0.0
+adding path;495;100.0;0;0.0
+Statuscode = 200, fahre fort.;18;100.0;0;0.0
+Setzte die Endpoint für die Umgebung: prod;18;100.0;0;0.0
+Start UploadFile;18;100.0;0;0.0
+End SendTo_API;19;100.0;0;0.0
+Status 200, fahre fort.;18;100.0;0;0.0
+HTTP-Result PDF;37;100.0;0;0.0
+UserID: 1234;19;100.0;0;0.0
+json infos;19;100.0;0;0.0
+File da?True;19;100.0;0;0.0
+get json body;19;100.0;0;0.0
+pro;57;100.0;0;0.0
+Start SendTo_API;19;100.0;0;0.0
+Finish OpenCaseAndCheckDocument;20;100.0;0;0.0
+Finish GetDNummer;19;100.0;0;0.0
+DNummer ausgelesen;19;100.0;0;0.0
+Start GetDNummer;19;100.0;0;0.0
+DA wurde ausgelesen;19;100.0;0;0.0
+Finish Adobe_ExtractInfosFromPDF;20;100.0;0;0.0
+Finish PDF_ReadInformation;20;100.0;0;0.0
+Check documents RPA;20;100.0;0;0.0
+End UploadFile;18;100.0;0;0.0
+Start PDF_ReadChecklist;18;100.0;0;0.0
+Created text for logging;18;100.0;0;0.0
+Finish PDF_ReadChecklist;18;100.0;0;0.0
+Finish AddNotes;1;100.0;0;0.0
+Notiz speichern geklickt;1;100.0;0;0.0
+Füge Aussteuerungsgrund - Kein spezifischer Part gefunden. - hinzu;1;100.0;0;0.0
+Clicked Notizen;1;100.0;0;0.0
+Start AddNotes;1;100.0;0;0.0
+False;3;100.0;0;0.0
+Http Request durchgeführt, Result.;2;100.0;0;0.0
+Lies 1 Person aus;5;100.0;0;0.0
+Finish ChangeProcesstype;8;100.0;0;0.0
+Prozesstyp und Index geändert. (Index-Detail neu: 13 Unterl. gepr.);8;100.0;0;0.0
+Keine Änderung notwendig;8;100.0;0;0.0
+Art des Prozesses: ;8;100.0;0;0.0
+Start ChangeProcesstype;8;100.0;0;0.0
+deleting file;674;100.0;0;0.0
+## End Process.xaml ##;18;100.0;0;0.0
+Finish ForwardCase;19;100.0;0;0.0
+Mitarbeiter - Zusatzordner - ausgewählt;19;100.0;0;0.0
+Team zur Weiterleitung selektiert.;12;100.0;0;0.0
+Start ForwardCase;19;100.0;0;0.0
+Betrag Spalte;19;100.0;0;0.0
+Team zur Weiterleitung selektiert;7;100.0;0;0.0
+amount found;38;100.0;0;0.0
+Opened row with double click;20;100.0;0;0.0
+got type;498;100.0;0;0.0
+D von;57;100.0;0;0.0
+Kein Scrollen notwendig;40;100.0;0;0.0
+start with new row ;498;100.0;0;0.0
+In Tabelle wurde hochgescrollt;20;100.0;0;0.0
+Information gefunden, fahre fort.;59;100.0;0;0.0
+number of tasks found;20;100.0;0;0.0
+Hinweis 'Vorgang gesperrt' vorhanden? - False;20;100.0;0;0.0
+Keine Sperrung, fahre mit dem Prozess fort;20;100.0;0;0.0
+AAstate of row is 'showing';20;100.0;0;0.0
+Öffne Dokumenteninformation.;497;100.0;0;0.0
+BN vorhanden, fahre mit dem Prozess fort;20;100.0;0;0.0
+Aktualisieren geklickt;20;100.0;0;0.0
+Zusatzordner offen, fahre mit dem Prozess fort.;20;100.0;0;0.0
+Zusatzordner offen? - True;20;100.0;0;0.0
+Start OpenCaseAndCheckDocument;20;100.0;0;0.0
+End PDF_DeleteAllDownloadedPDFs;20;100.0;0;0.0
+Lese alle Files aus dem Pfad aus;20;100.0;0;0.0
+Start PDF_DeleteAllDownloadedPDFs;20;100.0;0;0.0
+Start Process.xaml;20;100.0;0;0.0
+Typ muss nicht ausgelesen werden;478;100.0;0;0.0
+Save File;498;100.0;0;0.0
+Lese DocID aus.;497;100.0;0;0.0
+Start PDF_ReadInformation;60;100.0;0;0.0
+Kein spezifischer Part gefunden, fahre fort;20;100.0;0;0.0
+Throw: Kein spezifischer Part gefunden.;21;100.0;0;0.0
+Lies 2 Personen aus;15;100.0;0;0.0
+True;37;100.0;0;0.0
+Finish PDF_ReadInformationArt;20;100.0;0;0.0
+Art ausgelesen;20;100.0;0;0.0
+Problem beim Finden von spezifischem Part;7;100.0;0;0.0
+Seite mit spezifischem Part gefunden;39;100.0;0;0.0
+Treffer gefunden. Stoppe mit Schleife;39;100.0;0;0.0
+Keinen Treffer, suche auf nächster Seite;233;100.0;0;0.0
+read ID;497;100.0;0;0.0
+check new page;272;100.0;0;0.0
+Start Adobe_ExtractInfosFromPDF;20;100.0;0;0.0
+End Adobe_SaveFiles;20;100.0;0;0.0
+PDF lokal gespeichert;20;100.0;0;0.0
+Send hotkey for save as...;20;100.0;0;0.0
+Pdf geöffnet? True;20;100.0;0;0.0
+Start Adobe_SaveFiles;20;100.0;0;0.0
+File Saved;497;100.0;0;0.0
+Loan decision;0;0.0;20;100.0
+Forward digital transaction;0;0.0;11;100.0
+Check credibility;0;0.0;20;100.0
+Change transaction type;0;0.0;10;100.0
+Determine conditions;0;0.0;20;100.0
+Request documents;0;0.0;11;100.0
+Loan application received;0;0.0;20;100.0

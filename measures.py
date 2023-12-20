@@ -434,7 +434,7 @@ def get_color_hex(color_as_string, color_intensity):
     elif color_as_string == 'blue':
         #color_hex = '#0000FF'
         r = 0
-        g = 0
+        g = 100
         b = int((color_intensity*100)+155)
     elif color_as_string == 'green':
         #color_hex = '#00FF00'
@@ -1342,7 +1342,7 @@ def measure_case_activities_execution_time(df_log, attr_activity, show_progress=
             else:
                 mean_exe_time_activity_formatted = timeFormatter(mean_exe_time_activity)
             current_index = results_df.index[results_df['path'] == path]
-            results_df.at[current_index, activity] = mean_exe_time_activity_formatted
+            results_df.loc[current_index, activity] = mean_exe_time_activity_formatted
         
         if show_progress:
             progress_counter = progress_counter + 1
@@ -1350,6 +1350,7 @@ def measure_case_activities_execution_time(df_log, attr_activity, show_progress=
                 print(progress_counter, " of ", len(paths_list), " paths")
         
     return results_df, 'case_activities_execution_time'
+
 def measure_case_activities_execution_time_variance(df_log, attr_activity, show_progress=True):
     """
     Measure: Calculates for every case/path the standard deviation of the execution times
@@ -1409,7 +1410,7 @@ def measure_case_activities_execution_time_variance(df_log, attr_activity, show_
             else:
                 variance_exe_time_activity_formatted = timeFormatter_seconds_input(variance_exe_time_activity)
             current_index = results_df.index[results_df['path'] == path]
-            results_df.at[current_index, activity] = variance_exe_time_activity_formatted
+            results_df.loc[current_index, activity] = variance_exe_time_activity_formatted
         
         if show_progress:
             progress_counter = progress_counter + 1
@@ -1419,7 +1420,7 @@ def measure_case_activities_execution_time_variance(df_log, attr_activity, show_
     return results_df, 'case_activities_execution_time_variance'
 
 #Function for applying the measures
-def apply_measure(df_log, dfg, log, measure_name, attr_activity, attr_success, attr_bot, attr_traceID,
+def apply_measure(df_log, log_name, dfg, log, measure_name, attr_activity, attr_success, attr_bot, attr_traceID,
                   save_result=False, round_decimals=2, show_edge_labels=True, show_progress=True, max_no_of_edges=200):
     """
     Applies a measure identified by its name and returns either a visualization or a dataframe, depending on the measure
@@ -1500,25 +1501,25 @@ def apply_measure(df_log, dfg, log, measure_name, attr_activity, attr_success, a
         df_relative_case_fails, measure = measure_relative_case_fails(df_log, round_decimals, attr_traceID,
                                                                            attr_success, attr_bot, show_progress=show_progress)
         result_df = df_relative_case_fails
-        display(df_relative_case_fails)
+        #display(df_relative_case_fails)
         
     elif measure_name == 'automation_rate':
         df_automation_rate, measure = measure_automation_rate(df_log, round_decimals, attr_activity, attr_bot)
         result_df = df_automation_rate
-        display(df_automation_rate)
+        #display(df_automation_rate)
     
     elif measure_name == 'case_activities_execution_time':
         df_case_activities_execution_time, measure = measure_case_activities_execution_time(df_log, attr_activity,
                                                                                             show_progress=show_progress)
         result_df = df_case_activities_execution_time
-        display(df_case_activities_execution_time)
+        #display(df_case_activities_execution_time)
         
     elif measure_name == 'case_activities_execution_time_variance':
         df_case_activities_execution_time_variance, measure = measure_case_activities_execution_time_variance(df_log,
                                                                                                               attr_activity,
                                                                                             show_progress=show_progress)
         result_df = df_case_activities_execution_time_variance
-        display(df_case_activities_execution_time_variance)
+        #display(df_case_activities_execution_time_variance)
         
     else:
         print("unknown measure")
@@ -1526,15 +1527,15 @@ def apply_measure(df_log, dfg, log, measure_name, attr_activity, attr_success, a
     if is_graphical_measure:
         gviz = custom_variant_measure_apply(dfg, activities_color=activity_coloring, activities_labels=activity_labeling,
                                         show_edge_labels=show_edge_labels, log=log, max_no_of_edges=max_no_of_edges)
-        dfg_visualization.view(gviz)
+        #dfg_visualization.view(gviz)
         if save_result:
-            save_name = 'dfg_' + measure + '.png'
-            dfg_visualization.save(gviz, "results/" +save_name)
+            save_name = 'dfg_' + selected_log +'_' + measure + '.png'
+            dfg_visualization.save(gviz, "results/measure_outputs/graphs/" + save_name)
         return gviz
     else:
         if save_result:
-            save_name = 'df_' + measure + '.csv'
-            result_df.to_csv("results/" + save_name, index=False, sep=';')
+            save_name = 'df_' + selected_log +'_' + measure + '.csv'
+            result_df.to_csv("results/measure_outputs/csvs/" + save_name, index=False, sep=';')
         return result_df
 
 
@@ -1547,42 +1548,70 @@ def apply_measure(df_log, dfg, log, measure_name, attr_activity, attr_success, a
 # Measures with a dataframe as output
 # 'relative_case_fails', 'automation_rate', 'case_activities_execution_time', 'case_activities_execution_time_variance'
 
+# Value to execute all measures at once: 'all_measures'
+
 #choose measure
 selected_measure = 'exception_time_impact'
 #choose log ('company' or 'bpi')
 selected_log = 'company'
 
+def standard_values_for_logs(log_name):
+    """
+    Sets standard values for the known logs and returns these
 
-#Standard values: Real world log from company
-path = "results/Company_Merged_Log.xes"
-#Names/keys of the respective attributes in the log
-attr_activity = 'concept:name'
-attr_timestamp = 'time:timestamp'
-attr_traceID = 'caseId'
-attr_success = 'success'
-attr_bot = 'bot'
-attr_eventid = 'eventId'
-attr_lifecycle = 'lifecycle:transition'
-log_company, df_log_company, dfg_company = load_merged_log_and_preprocess(path, attr_lifecycle, attr_timestamp, True)
-df_log_company = preprocess_add_columns(df_log_company, attr_traceID, attr_timestamp, attr_activity, attr_eventid, attr_bot)
-df_log, dfg, log = df_log_company, dfg_company, log_company
+    Parameters
+    -----------
+    log_name
+        The name of the selected log, e.g., 'company' or 'bpi'
 
-if selected_log == 'bpi':
-    #BPI challenge
-    path = "results/BPI_Merged_Log.xes"
+    Returns
+    -----------
+    df_log, dfg, log, attr_activity, attr_success, attr_bot, attr_traceID
+        The defined attributes depending on the selected log
+    """
+
+    #Standard values: Real world log from company
+    path = "results/Company_Merged_Log.xes"
     #Names/keys of the respective attributes in the log
     attr_activity = 'concept:name'
     attr_timestamp = 'time:timestamp'
-    attr_traceID = 'docid_uuid'
+    attr_traceID = 'caseId'
     attr_success = 'success'
     attr_bot = 'bot'
-    attr_eventid = 'eventid'
+    attr_eventid = 'eventId'
     attr_lifecycle = 'lifecycle:transition'
-    log_bpi, df_log_bpi, dfg_bpi = load_merged_log_and_preprocess(path, attr_lifecycle, attr_timestamp, True)
-    df_log_bpi = preprocess_add_columns(df_log_bpi, attr_traceID, attr_timestamp, attr_activity, attr_eventid, attr_bot)
-    df_log, dfg, log = df_log_bpi, dfg_bpi, log_bpi
+    log_company, df_log_company, dfg_company = load_merged_log_and_preprocess(path, attr_lifecycle, attr_timestamp, True)
+    df_log_company = preprocess_add_columns(df_log_company, attr_traceID, attr_timestamp, attr_activity, attr_eventid, attr_bot)
+    df_log, dfg, log = df_log_company, dfg_company, log_company
 
-measure_result = apply_measure(df_log, dfg, log, selected_measure, attr_activity, attr_success, attr_bot, attr_traceID, save_result=True, round_decimals=2,
-                               show_edge_labels=True, show_progress=True, max_no_of_edges=150)
+    if log_name == 'bpi':
+        #BPI challenge
+        path = "results/BPI_Merged_Log.xes"
+        #Names/keys of the respective attributes in the log
+        attr_activity = 'concept:name'
+        attr_timestamp = 'time:timestamp'
+        attr_traceID = 'docid_uuid'
+        attr_success = 'success'
+        attr_bot = 'bot'
+        attr_eventid = 'eventid'
+        attr_lifecycle = 'lifecycle:transition'
+        log_bpi, df_log_bpi, dfg_bpi = load_merged_log_and_preprocess(path, attr_lifecycle, attr_timestamp, True)
+        df_log_bpi = preprocess_add_columns(df_log_bpi, attr_traceID, attr_timestamp, attr_activity, attr_eventid, attr_bot)
+        df_log, dfg, log = df_log_bpi, dfg_bpi, log_bpi
 
-measure_result
+    return df_log, dfg, log, attr_activity, attr_success, attr_bot, attr_traceID
+
+def execute_selected_measures(measure, log, save_result):
+    df_log, dfg, log, attr_activity, attr_success, attr_bot, attr_traceID = standard_values_for_logs(log)
+    if measure == 'all_measures':
+        all_measure_names = ['relative_fails', 'exception_time_impact', 'exception_time_variance', 'relative_execution_time', 'execution_time_variance',
+                             'bot_human_handover_count', 'bot_human_handover_impact', 'bot_human_handover_variance', 'relative_case_fails', 'automation_rate',
+                             'case_activities_execution_time', 'case_activities_execution_time_variance']
+        for measure_name in all_measure_names:
+            apply_measure(df_log, log, dfg, log, measure_name, attr_activity, attr_success, attr_bot, attr_traceID, save_result, round_decimals=2,
+                                        show_edge_labels=True, show_progress=True, max_no_of_edges=150)
+    else:
+        apply_measure(df_log, log, dfg, log, measure, attr_activity, attr_success, attr_bot, attr_traceID, save_result, round_decimals=2,
+                                    show_edge_labels=True, show_progress=True, max_no_of_edges=150)
+        
+execute_selected_measures(selected_measure, selected_log, True)
