@@ -171,8 +171,7 @@ xes_exporter.apply(log, 'results/BPI_Bot_Log_UiPath_Parsed.xes')
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 #pm4py.view_dfg(dfg, start_activities, end_activities)
-#dfg_visualization.save(dfg, "results/graphs/" + 'dfg_BPI_Bot_Log_UiPath_Parsed.png')
-#pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_BPI_Bot_Log_UiPath_Parsed.svg')
+pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_BPI_Bot_Log_UiPath_Parsed.svg')
 
 
 #Parse UiPath real world log from company
@@ -186,7 +185,7 @@ connecting_attribute = 'Ordnungsbegriff'
 attr_conceptName = 'message'
 attr_timestamp = 'timeStamp'
 attr_lifecycle = 'level'
-valuesLifecycle = ['Error', 'Info', '']
+valuesLifecycle = ['Info', '']
 standardValueLifecycle = "start"
 attr_eventId = 'fingerprint'
 attr_caseId = 'jobId'
@@ -208,6 +207,7 @@ xes_exporter.apply(log, 'results/Company_Bot_Log_UiPath_Parsed.xes')
 #Display log as directly follows graph
 dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 #pm4py.view_dfg(dfg, start_activities, end_activities)
+pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_Company_Bot_Log_UiPath_Parsed.svg')
 
 
 #BluePrism to .xes
