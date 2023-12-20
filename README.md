@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 The file `bot_log_parser.py` parses bot logs into the XES process mining format.
 It uses several bot logs from the `data` folder and the resulting XES files are saved to the `results` folder.
-Depending on the use case and on specific format of a bot log, different attributes values are needed as input and can be configured in the file.
+Depending on the use case and on the specific format of a bot log, different attributes values are needed as input and can be configured in the file.
 To run the file, execute the following command:
 ```
 python3 bot_log_parser.py
