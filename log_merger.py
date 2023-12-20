@@ -107,6 +107,11 @@ parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 
 merged_log = log_converter.apply(df_merged_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 xes_exporter.apply(merged_log, 'results/BPI_Merged_Log.xes')
 
+#Display log as directly follows graph
+dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
+#pm4py.view_dfg(dfg, start_activities, end_activities)
+pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_BPI_Merged_Log.svg')
+
 
 #Merge Real World Log from Company
 
@@ -137,6 +142,7 @@ parameters = {log_converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: 
 merged_log = log_converter.apply(df_merged_log, parameters=parameters, variant=log_converter.Variants.TO_EVENT_LOG)
 xes_exporter.apply(merged_log, 'results/Company_Merged_Log.xes')
 
-#Visualize as directly follows graph
-#dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
+#Display log as directly follows graph
+dfg, start_activities, end_activities = pm4py.discover_dfg(merged_log)
 #pm4py.view_dfg(dfg, start_activities, end_activities)
+pm4py.save_vis_dfg(dfg,start_activities, end_activities,"results/graphs/" + 'dfg_Company_Merged_Log.svg')
