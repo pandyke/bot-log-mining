@@ -1555,7 +1555,7 @@ def apply_measure(df_log, log_name, dfg, log, measure_name, attr_activity, attr_
 #choose measure
 selected_measure = 'all_measures'
 #choose log ('company' or 'bpi')
-selected_log = 'bpi'
+selected_log = 'company'
 
 def standard_values_for_logs(log_name):
     """
