@@ -1,9 +1,5 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-- family-names: "Egger"
-  given-names: "Andreas"
-  orcid: "https://orcid.org/0000-0001-5580-4274"
 title: "Bot log mining: An approach to the integrated analysis of Robotic Process Automation and process mining"
 url: "https://github.com/pandyke/bot-log-mining"
 preferred-citation:
