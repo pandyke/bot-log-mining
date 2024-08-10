@@ -27,8 +27,7 @@ preferred-citation:
   - family-names: "Wynn"
     given-names: "Moe T."
     orcid: "https://orcid.org/0000-0002-7205-8821"
-  # doi: "https://doi.org/10.1016/j.is.2024.102431"
-  # journal: "Information Systems"
-  title: "Bot log mining: An approach to the integrated analysis of Robotic Process Automation and process mining"
-  # volume: 126
+  doi: "https://doi.org/10.1016/j.is.2024.102431"
+  journal: "Information Systems"
+  volume: 126
   year: 2024
